@@ -1,0 +1,66 @@
+/* import necessary fonts from google*/
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+
+	font-family: 'Outfit', sans-serif;
+	font-size: 18px;
+
+	--s_blue: hsl(215, 51%, 70%);
+	--cyan: hsl(178, 100%, 50%);
+	--vd_blue_main: hsl(217, 54%, 11%);
+	--vd_blue_card: hsl(216, 50%, 16%);
+	--vd_blue_line: hsl(215, 32%, 27%);
+	--white: hsl(0, 0%, 100%);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+p {
+	font-weight: 300;
+}
+
+img {
+	max-width: 100%;
+}
+
+ul {
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem 0;
+	border-bottom: 1px solid var(--vd_blue_line);
+}
+
+ul li {
+	display: flex;
+	align-items: center;
+}
+
+body {
+	background-color: var(--vd_blue_main);
+	color:  hsl(0, 0%, 100%, 60%);
+	padding: 1.25rem;
+}
+
+.preview_card {
+	padding: 1.25rem;
+	background-color: var(--vd_blue_card);
+	border-radius: 0.75rem;
+}
+
+.preview_card h2 {
+	color: var(--white);
+	margin: .85rem 0.2rem 0.2rem 0;
+	font-weight: 400;
+}
+
+.preview_card ul li:first-child {
+	color: var(--cyan);
+}
